@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090511" />
+    <meta
+      name="description"
+      content="Uma surpresa especial feita com carinho."
+    />
+    <title>Uma Surpresa Para Você 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient-glow glow-one"></div>
+    <div class="ambient-glow glow-two"></div>
+    <div id="particles" aria-hidden="true"></div>
+    <audio id="bgMusic" loop>
+      <source src="musica.opus" type="audio/ogg" />
+    </audio>
+    <button
+      class="music-button"
+      id="musicButton"
+      type="button"
+      aria-label="Ligar música"
+    >
+      ♫ <span id="musicLabel">Ligar música</span>
+    </button>
+    <main class="scene">
+      <div class="eyebrow">
+        <span></span> UMA SURPRESA ESPECIAL <span></span>
+      </div>
+      <p class="subtitle">Preparei uma coisinha especial para você...</p>
+      <div class="letter-stage">
+        <div class="letter-shadow"></div>
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-side left"></div>
+          <div class="envelope-side right"></div>
+          <div class="envelope-front"></div>
+          <button
+            class="wax-seal"
+            id="sealButton"
+            type="button"
+            aria-label="Abrir envelope"
+          >
+            ♥
+          </button>
+        </div>
+        <article class="letter" id="letter" aria-hidden="true">
+          <div class="letter-border">
+            <div class="letter-content">
+              <div class="letter-ornament">✧ ♡ ✧</div>
+              <p class="letter-kicker">UMA MENSAGEM DO CORAÇÃO</p>
+              <h2>Algo que quero te dizer...</h2>
+              <div class="little-divider">♥</div>
+              <p class="letter-text">
+                Às vezes, as palavras não conseguem explicar tudo o que
+                sentimos. Por isso, preparei esta pequena surpresa para tornar
+                este momento um pouquinho mais especial. 💗
+              </p>
+              <p class="letter-text">
+                Agora, só preciso te fazer uma perguntinha...
+              </p>
+              <div class="letter-signature">Com carinho <span>♥</span></div>
+              <button class="continue-button" id="questionButton" type="button">
+                Descobrir a pergunta <span>→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <section class="question-card" id="questionCard" aria-hidden="true">
+          <span class="card-sparkle sparkle-a">✧</span
+          ><span class="card-sparkle sparkle-b">✦</span>
+          <div class="heart-emblem">
+            <svg class="heart-svg" viewBox="0 0 100 100" aria-hidden="true">
+              <path
+                d="M50 84 C40 74 12 55 12 34 C12 13 39 7 50 28 C61 7 88 13 88 34 C88 55 60 74 50 84Z"
+                fill="#ff79bd"
+                stroke="#ffc5e5"
+                stroke-width="3"
+              />
+              <path
+                d="M26 33 C27 23 36 20 42 25"
+                fill="none"
+                stroke="#fff3fa"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <path
+                d="M77 15 L80 22 L87 25 L80 28 L77 35 L74 28 L67 25 L74 22Z"
+                fill="#f3d69c"
+              />
+            </svg>
+          </div>
+          <p class="question-kicker">UMA PERGUNTA ESPECIAL</p>
+          <h2>Quer namorar comigo? 💗</h2>
+          <p class="question-note">Escolha com o coração...</p>
+          <div class="buttons-area" id="buttonsArea">
+            <button
+              class="answer-button yes-button"
+              id="yesButton"
+              type="button"
+            >
+              <span class="button-heart">♥</span> Sim!</button
+            ><button
+              class="answer-button no-button"
+              id="noButton"
+              type="button"
+            >
+              Não
+            </button>
+          </div>
+          <p class="little-hint" id="littleHint" aria-live="polite">
+            Tem certeza da sua resposta? ✨
+          </p>
+        </section>
+      </div>
+      <footer>FEITO COM CARINHO ♡</footer>
+    </main>
+    <div class="screen-heart" id="screenHeart" aria-hidden="true">♥</div>
+    <section class="celebration" id="celebration" aria-hidden="true">
+      <div class="celebration-orbit orbit-one"></div>
+      <div class="celebration-orbit orbit-two"></div>
+      <div class="celebration-content">
+        <svg class="celebration-svg" viewBox="0 0 200 180" aria-hidden="true">
+          <defs>
+            <linearGradient
+              id="celebrationGradient"
+              x1="0"
+              y1="0"
+              x2="1"
+              y2="1"
+            >
+              <stop offset="0%" stop-color="#ffc5e5" />
+              <stop offset="55%" stop-color="#ff79bd" />
+              <stop offset="100%" stop-color="#cba6ff" />
+            </linearGradient>
+          </defs>
+          <path
+            class="celebration-heart-path"
+            d="M100 155 C80 135 20 95 20 55 C20 15 70 5 100 45 C130 5 180 15 180 55 C180 95 120 135 100 155Z"
+            fill="url(#celebrationGradient)"
+            stroke="#ffe5f4"
+            stroke-width="3"
+          />
+        </svg>
+        <p class="celebration-kicker">O COMEÇO DE ALGO LINDO</p>
+        <h2>Eu sabia! <em>♥</em></h2>
+        <p class="celebration-message">
+          Que este seja apenas o primeiro capítulo de uma história cheia de
+          carinho, sorrisos e momentos inesquecíveis. 💗
+        </p>
+        <div class="celebration-flourish">✧ ── ♡ ── ✧</div>
+        <button class="replay-button" id="replayButton" type="button">
+          ↻ Recomeçar
+        </button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
